@@ -2,55 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Service Delivery | Karan Anil Panhalkar</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <style>
-        .skip-link { position: absolute; left: -9999px; top: 0; z-index: 100; background: #2563EB; color: #fff; padding: .75rem 1.25rem; font-weight: 700; }
-        .skip-link:focus { left: 0; }
-        *:focus-visible { outline: 3px solid #3B82F6; outline-offset: 4px; }
-        body { font-family: 'Inter', system-ui, sans-serif; background-color: #0F172A; color: #F8FAFC; }
-    </style>
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="antialiased leading-relaxed">
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <nav aria-label="Main Navigation" class="sticky top-0 z-50 bg-slate-900/90 border-b border-slate-800 backdrop-blur-md">
-        <div class="max-w-7xl mx-auto px-6 py-5 flex flex-wrap justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold tracking-tight text-white hover:text-blue-400 transition-colors">
-                Karan<span class="text-blue-500">.Dev</span>
-            </a>
-            <ul class="flex gap-8 text-sm font-semibold text-slate-300">
-                <li><a href="index.html" class="hover:text-white transition-colors">Back to Portfolio</a></li>
-            </ul>
+    <header class="site">
+        <div class="wrap">
+            <p class="name"><a href="index.html">Karan Anil Panhalkar</a></p>
+            <p class="role">Software engineer and accessibility consultant · Pune, India</p>
+            <nav aria-label="Primary">
+                <ul>
+                    <li><a href="index.html">Back to portfolio</a></li>
+                </ul>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <main id="main-content" class="max-w-4xl mx-auto px-6 py-24 min-h-screen">
-        <h1 class="text-4xl font-bold text-white mb-8">Shipping & Delivery Policy</h1>
-        <div class="bg-slate-800/40 p-8 rounded-2xl border border-slate-700 text-slate-300 space-y-6">
-            <p><strong>Last Updated: July 2026</strong></p>
+    <main id="main-content" class="wrap policy">
+        <h1 style="font-size:1.75rem;margin:1.5rem 0 1rem">Shipping &amp; Delivery Policy</h1>
+
+            <p class="note">Last updated: July 2026</p>
             <p>As a provider of purely digital IT services, software development, and consulting, no physical products are shipped.</p>
-            
-            <h2 class="text-xl font-bold text-white mt-6">1. Digital Delivery Protocol</h2>
+            <h2>1. Digital Delivery Protocol</h2>
             <p>All completed deliverables (source code, application builds, accessibility audit reports, and documentation) are delivered entirely digitally. Deliverables will be transferred to the client via secure Git repository transfer (e.g., GitHub, GitLab), encrypted ZIP files, or direct server deployment as dictated by the project requirements.</p>
-            
-            <h2 class="text-xl font-bold text-white mt-6">2. Delivery Timelines</h2>
+            <h2>2. Delivery Timelines</h2>
             <p>Delivery timelines vary based on project complexity and scope. Exact delivery schedules and milestone deadlines are established and agreed upon in writing before project kickoff.</p>
-            
-            <h2 class="text-xl font-bold text-white mt-6">3. Confirmation of Delivery</h2>
+            <h2>3. Confirmation of Delivery</h2>
             <p>Delivery is considered complete once the digital assets have been successfully transferred to the client's control or deployed to the agreed-upon testing/production environment.</p>
-        </div>
     </main>
 
-    <footer class="bg-black py-10 border-t border-slate-800 text-center text-sm text-slate-400">
-        <div class="flex flex-wrap justify-center gap-4 mb-4">
-            <a href="privacy.html" class="hover:text-blue-400 transition-colors">Privacy Policy</a>
-            <a href="terms.html" class="hover:text-blue-400 transition-colors">Terms & Conditions</a>
-            <a href="refund.html" class="hover:text-blue-400 transition-colors">Refund Policy</a>
-            <a href="delivery.html" class="hover:text-blue-400 transition-colors">Delivery Policy</a>
+    <footer class="site">
+        <div class="wrap">
+            <nav aria-label="Policies">
+                <ul>
+                    <li><a href="privacy.html">Privacy policy</a></li><li><a href="terms.html">Terms and conditions</a></li><li><a href="refund.html">Refund policy</a></li><li><a href="delivery.html" aria-current="page">Delivery policy</a></li>
+                </ul>
+            </nav>
+            <p>&copy; 2026 Karan Anil Panhalkar</p>
         </div>
-        <p>&copy; 2026 Karan Anil Panhalkar. Pune, Maharashtra, India. All rights reserved.</p>
     </footer>
 </body>
 </html>

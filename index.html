@@ -2,370 +2,152 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karan Anil Panhalkar | Software Engineer & Consultant</title>
-    <meta name="description" content="Portfolio of Karan Anil Panhalkar. Full-Stack Developer, Android Engineer, and MES Specialist offering enterprise software solutions, automation, and a11y testing.">
-    <meta name="theme-color" content="#0F172A">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Karan Anil Panhalkar – Software Engineer and Accessibility Consultant</title>
+    <meta name="description" content="Portfolio of Karan Anil Panhalkar, a software engineer in Pune, India. Full-stack and Android development, QA automation and WCAG accessibility audits.">
+    <meta name="color-scheme" content="light dark">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Karan Anil Panhalkar | Software Engineer & Consultant">
-    <meta property="og:description" content="Full-stack, Android, QA automation and WCAG accessibility consulting.">
-    <meta name="twitter:card" content="summary">
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230F172A'/%3E%3Ctext x='16' y='22' font-size='16' font-family='sans-serif' font-weight='700' fill='%2360A5FA' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E">
-    <link rel="stylesheet" href="css/styles.css">
-    <style>
-        /* High-contrast custom focus rings for strict a11y compliance */
-        *:focus-visible {
-            outline: 3px solid #3B82F6;
-            outline-offset: 4px;
-        }
-        .skip-link { position: absolute; left: -9999px; top: 0; z-index: 100; background: #2563EB; color: #fff; padding: .75rem 1.25rem; font-weight: 700; }
-        .skip-link:focus { left: 0; }
-        @media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
-        html { scroll-behavior: smooth; }
-        body {
-            font-family: 'Inter', system-ui, -apple-system, sans-serif;
-            background-color: #0F172A; /* Deep Slate Dark Mode */
-            color: #F8FAFC; 
-        }
-        .gradient-text {
-            background: linear-gradient(to right, #60A5FA, #A78BFA);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-    </style>
+    <meta property="og:title" content="Karan Anil Panhalkar – Software Engineer and Accessibility Consultant">
+    <meta property="og:description" content="Full-stack and Android development, QA automation and WCAG accessibility audits.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%231b1f24'/%3E%3Ctext x='16' y='23' font-size='20' font-family='sans-serif' font-weight='700' fill='%23fff' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="antialiased leading-relaxed selection:bg-blue-600 selection:text-white">
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <!-- Accessible Navigation -->
-    <nav aria-label="Main Navigation" class="sticky top-0 z-50 bg-slate-900/90 border-b border-slate-800 backdrop-blur-md">
-        <div class="max-w-7xl mx-auto px-6 py-5 flex flex-wrap justify-between items-center">
-            <a href="#" class="text-2xl font-bold tracking-tight text-white hover:text-blue-400 transition-colors" aria-label="Karan Panhalkar Home">
-                Karan<span class="text-blue-500">.Dev</span>
-            </a>
-            <button type="button" id="nav-toggle" class="md:hidden text-slate-200 border border-slate-600 rounded-lg px-4 py-2 font-semibold" aria-expanded="false" aria-controls="nav-menu">Menu</button>
-            <ul id="nav-menu" class="hidden md:flex flex-col md:flex-row w-full md:w-auto gap-4 md:gap-8 mt-4 md:mt-0 text-sm font-semibold text-slate-300">
-                <li><a href="#experience" class="hover:text-white transition-colors">Experience</a></li>
-                <li><a href="#services" class="hover:text-white transition-colors">Expertise</a></li>
-                <li><a href="#tech-stack" class="hover:text-white transition-colors">Tech Stack</a></li>
-                <li><a href="#projects" class="hover:text-white transition-colors">Projects</a></li>
-                <li><a href="#compliance" class="hover:text-white transition-colors">Security</a></li>
-                <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
-            </ul>
+    <header class="site">
+        <div class="wrap">
+            <h1 class="name">Karan Anil Panhalkar</h1>
+            <p class="role">Software engineer and accessibility consultant · Pune, India</p>
+            <nav aria-label="Primary">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <main id="main-content">
-        <!-- Senior Hero Section -->
-        <section class="max-w-7xl mx-auto px-6 py-28 md:py-40" aria-labelledby="hero-heading">
-            <div class="max-w-4xl">
-                <h1 id="hero-heading" class="text-5xl md:text-7xl font-extrabold tracking-tight mb-8 text-white leading-tight">
-                    Architecting Enterprise Web, Mobile & <span class="gradient-text">Automation Systems.</span>
-                </h1>
-                <p class="text-xl md:text-2xl text-slate-400 mb-12 leading-relaxed">
-                    I am <strong class="text-slate-100">Karan Anil Panhalkar</strong>, a Software Engineer, MES Developer, and QA Automation Consultant. I engineer scalable full-stack applications, native Android solutions, and rigorous accessibility compliance frameworks for global clients.
-                </p>
-                <div class="flex flex-wrap gap-5">
-                    <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-lg transition-colors shadow-lg shadow-blue-500/30">
-                        Hire Me for a Project
-                    </a>
-                    <a href="#services" class="bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white font-bold py-4 px-10 rounded-lg transition-colors">
-                        Explore My Services
-                    </a>
-                </div>
+    <main id="main-content" class="wrap">
+        <section id="about" aria-labelledby="about-h">
+            <h2 id="about-h">About</h2>
+            <p>I am a software engineer working across web, Android and industrial software. I build full-stack applications, test them thoroughly, and audit them against the Web Content Accessibility Guidelines (WCAG).</p>
+            <p>I work independently with clients remotely, and I have professional experience in manufacturing execution systems (MES). I care most about software that people with disabilities can use without workarounds.</p>
+            <p>B.A., Savitribai Phule Pune University. Working languages: English, Hindi, Marathi.</p>
+        </section>
+
+        <section id="experience" aria-labelledby="experience-h">
+            <h2 id="experience-h">Experience</h2>
+
+            <div class="entry">
+                <h3>Independent Consultant</h3>
+                <p class="meta">Freelance, remote · Current</p>
+                <ul class="plain">
+                    <li>Full-stack web and Android application development for international clients.</li>
+                    <li>Accessibility audits against WCAG 2.1 and 2.2 AA, tested with NVDA, JAWS, VoiceOver and TalkBack, with written remediation guidance.</li>
+                    <li>Manual and automated QA, including white-box code review, black-box and user acceptance testing, and UI and API test scripts.</li>
+                </ul>
+            </div>
+
+            <div class="entry">
+                <h3>MES Engineer / Software Developer</h3>
+                <p class="meta">Mahindra Integrated Business Solutions · 1.5 years</p>
+                <ul class="plain">
+                    <li>Developed and maintained Manufacturing Execution System (MES) software connecting IT systems with shop-floor operations.</li>
+                    <li>Built and supported internal business applications and data integrations.</li>
+                    <li>Added automated tests to improve reliability of releases.</li>
+                </ul>
+                <p class="note">System details are not shared, in line with a signed non-disclosure agreement.</p>
             </div>
         </section>
 
-        <!-- Professional Experience Section -->
-        <section id="experience" class="border-t border-slate-800 bg-slate-800/20 py-24" aria-labelledby="experience-heading">
-            <div class="max-w-7xl mx-auto px-6">
-                <h2 id="experience-heading" class="text-3xl font-bold mb-12 text-white">Professional Background</h2>
-                
-                <div class="relative border-l-2 border-slate-700 pl-8 ml-4">
-                    <!-- Mahindra Experience -->
-                    <div class="mb-12 relative">
-                        <div class="absolute -left-[41px] top-1 h-5 w-5 rounded-full bg-blue-500 border-4 border-slate-900"></div>
-                        <h3 class="text-2xl font-bold text-white mb-1">Former MES Engineer / Software Developer</h3>
-                        <div class="flex flex-wrap items-center gap-3 mb-4">
-                            <h4 class="text-lg font-medium text-blue-400">Mahindra Integrated Business Solutions</h4>
-                            <span class="px-3 py-0.5 bg-slate-700 text-xs font-semibold text-slate-300 rounded-full">1.5 Years</span>
-                        </div>
-                        <p class="text-slate-300 mb-4 leading-relaxed max-w-4xl">
-                            Engineered and maintained robust Manufacturing Execution Systems (MES) over a 1.5-year tenure. Bridged the gap between IT infrastructure and shop-floor OT (Operational Technology) by developing industrial workflows, optimizing real-time data pipelines, and ensuring seamless backend integration for large-scale manufacturing operations.
-                        </p>
-                        <ul class="list-disc list-inside text-slate-400 space-y-2">
-                            <li>Developed and deployed business-critical internal enterprise applications.</li>
-                            <li>Integrated automated testing into release workflows to reduce production issues.</li>
-                            <li>Optimized legacy codebase architectures for improved system reliability and speed.</li>
-                        </ul>
-                        <p class="text-slate-400 text-sm mt-4 italic">Specific systems, internal architecture, and proprietary details are withheld in accordance with a signed Non-Disclosure Agreement (NDA).</p>
-                    </div>
-                    
-                    <!-- Freelance / Independent Consulting -->
-                    <div class="relative">
-                        <div class="absolute -left-[41px] top-1 h-5 w-5 rounded-full bg-blue-500 border-4 border-slate-900"></div>
-                        <h3 class="text-2xl font-bold text-white mb-1">Independent Consultant</h3>
-                        <h4 class="text-lg font-medium text-blue-400 mb-4">Global Freelance Software Development</h4>
-                        <p class="text-slate-300 leading-relaxed max-w-4xl">
-                            Providing full-stack web and mobile application development, accessibility auditing (a11y), and QA automation for international clients. Specializing in highly secure, bespoke systems with a focus on strict WCAG compliance and rigorous white/black box testing methodologies.
-                        </p>
-                    </div>
-                </div>
-            </div>
+        <section id="services" aria-labelledby="services-h">
+            <h2 id="services-h">Services</h2>
+            <ul class="plain">
+                <li><strong>Accessibility audits and remediation.</strong> WCAG 2.1 and 2.2 AA review of websites and Android apps, screen reader testing, and fixes for focus order, semantics and ARIA.</li>
+                <li><strong>Full-stack development.</strong> Web applications and REST APIs in Java, Python and Node.js, with relational and NoSQL databases.</li>
+                <li><strong>Android development.</strong> Native apps in Kotlin and Java, including Jetpack Compose, MVVM, offline support and payment or third-party API integration.</li>
+                <li><strong>QA and test automation.</strong> Test planning, Selenium and JUnit suites, and release testing.</li>
+                <li><strong>Automation and AI integration.</strong> LLM API integration, workflow automation with n8n, Zapier and Python, and internal tools.</li>
+            </ul>
         </section>
 
-        <!-- Deep-Dive Services Section -->
-        <section id="services" class="py-24 border-t border-slate-800" aria-labelledby="services-heading">
-            <div class="max-w-7xl mx-auto px-6">
-                <h2 id="services-heading" class="text-3xl font-bold mb-4 text-white">Consulting & Engineering Services</h2>
-                <p class="text-slate-400 mb-16 max-w-3xl text-lg">Comprehensive software solutions spanning the entire development lifecycle—from backend architecture and frontend interfaces to automated deployment and legal compliance testing.</p>
-                
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                    <!-- Full Stack -->
-                    <article class="bg-slate-800/50 p-10 rounded-2xl border border-slate-700 hover:border-blue-500 transition-colors">
-                        <div class="mb-6 inline-block p-3 bg-blue-500/10 rounded-lg text-blue-400">
-                            <svg aria-hidden="true" class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
-                        </div>
-                        <h3 class="text-2xl font-bold text-white mb-4">Enterprise Full-Stack Development</h3>
-                        <p class="text-slate-400 mb-6 leading-relaxed">Architecting secure, high-performance web applications tailored to complex business logic. I build robust RESTful APIs, manage relational and NoSQL databases, and design intuitive, reactive frontends.</p>
-                        <ul class="space-y-3 text-slate-300">
-                            <li class="flex items-center gap-2"><span class="text-blue-500">✓</span> Custom SaaS & B2B Portals</li>
-                            <li class="flex items-center gap-2"><span class="text-blue-500">✓</span> Backend Architecture (Java, Python, Node.js)</li>
-                            <li class="flex items-center gap-2"><span class="text-blue-500">✓</span> Database Design & Cloud Deployment</li>
-                        </ul>
-                    </article>
-
-                    <!-- Android -->
-                    <article class="bg-slate-800/50 p-10 rounded-2xl border border-slate-700 hover:border-blue-500 transition-colors">
-                        <div class="mb-6 inline-block p-3 bg-blue-500/10 rounded-lg text-blue-400">
-                            <svg aria-hidden="true" class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
-                        </div>
-                        <h3 class="text-2xl font-bold text-white mb-4">Native Android App Engineering</h3>
-                        <p class="text-slate-400 mb-6 leading-relaxed">Developing feature-rich, scalable Android applications using Kotlin and modern Android architecture (MVVM, Clean Architecture). Focus on memory optimization, offline-first capabilities, and smooth UI/UX.</p>
-                        <ul class="space-y-3 text-slate-300">
-                            <li class="flex items-center gap-2"><span class="text-blue-500">✓</span> Kotlin & Java Native Development</li>
-                            <li class="flex items-center gap-2"><span class="text-blue-500">✓</span> Jetpack Compose & Material Design</li>
-                            <li class="flex items-center gap-2"><span class="text-blue-500">✓</span> Third-party API & Payment Gateway Integration</li>
-                        </ul>
-                    </article>
-
-                    <!-- QA -->
-                    <article class="bg-slate-800/50 p-10 rounded-2xl border border-slate-700 hover:border-blue-500 transition-colors">
-                        <div class="mb-6 inline-block p-3 bg-blue-500/10 rounded-lg text-blue-400">
-                            <svg aria-hidden="true" class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
-                        </div>
-                        <h3 class="text-2xl font-bold text-white mb-4">Advanced QA & Test Automation</h3>
-                        <p class="text-slate-400 mb-6 leading-relaxed">Improving software reliability through deep-dive security testing, structural code analysis, and CI/CD automated test suites designed to catch edge-case failures before production.</p>
-                        <ul class="space-y-3 text-slate-300">
-                            <li class="flex items-center gap-2"><span class="text-blue-500">✓</span> White Box Code-Level Inspection</li>
-                            <li class="flex items-center gap-2"><span class="text-blue-500">✓</span> Black Box System & UAT Testing</li>
-                            <li class="flex items-center gap-2"><span class="text-blue-500">✓</span> Automated UI/API Testing Scripts</li>
-                        </ul>
-                    </article>
-
-                    <!-- Accessibility -->
-                    <article class="bg-slate-800/50 p-10 rounded-2xl border border-slate-700 hover:border-blue-500 transition-colors">
-                        <div class="mb-6 inline-block p-3 bg-blue-500/10 rounded-lg text-blue-400">
-                            <svg aria-hidden="true" class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
-                        </div>
-                        <h3 class="text-2xl font-bold text-white mb-4">WCAG Digital Accessibility (a11y)</h3>
-                        <p class="text-slate-400 mb-6 leading-relaxed">Protecting enterprises from legal liability by helping applications become accessible to users with disabilities, navigating complex ARIA implementations, and providing detailed remediation audits.</p>
-                        <ul class="space-y-3 text-slate-300">
-                            <li class="flex items-center gap-2"><span class="text-blue-500">✓</span> WCAG 2.1 / 2.2 AA Audits & Remediation</li>
-                            <li class="flex items-center gap-2"><span class="text-blue-500">✓</span> Screen Reader Testing (NVDA, JAWS, VoiceOver, TalkBack)</li>
-                            <li class="flex items-center gap-2"><span class="text-blue-500">✓</span> DOM Remediation & Focus Management</li>
-                        </ul>
-                    </article>
-
-                    <!-- AI Automation -->
-                    <article class="bg-slate-800/50 p-10 rounded-2xl border border-slate-700 hover:border-blue-500 transition-colors lg:col-span-2">
-                        <div class="mb-6 inline-block p-3 bg-blue-500/10 rounded-lg text-blue-400">
-                            <svg aria-hidden="true" class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                        </div>
-                        <h3 class="text-2xl font-bold text-white mb-4">AI-Powered Automation & Workflow Engineering</h3>
-                        <p class="text-slate-400 mb-6 leading-relaxed">Designing AI-driven automation pipelines that remove manual, repetitive work from business operations — from LLM-integrated data processing to fully automated end-to-end task workflows connecting your existing tools.</p>
-                        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-slate-300">
-                            <li class="flex items-center gap-2"><span class="text-blue-500">✓</span> LLM & AI API Integration (OpenAI, Claude, etc.)</li>
-                            <li class="flex items-center gap-2"><span class="text-blue-500">✓</span> Workflow Automation (n8n, Zapier, Python)</li>
-                            <li class="flex items-center gap-2"><span class="text-blue-500">✓</span> AI Chatbots & Internal Tooling</li>
-                            <li class="flex items-center gap-2"><span class="text-blue-500">✓</span> Data Pipeline & Business Process Automation</li>
-                        </ul>
-                    </article>
-                </div>
-            </div>
+        <section id="skills" aria-labelledby="skills-h">
+            <h2 id="skills-h">Skills</h2>
+            <dl class="facts">
+                <dt>Languages</dt>
+                <dd>Java, Python, Kotlin, JavaScript, TypeScript, C++, HTML, CSS</dd>
+                <dt>Mobile and front end</dt>
+                <dd>Android SDK, Jetpack Compose, React</dd>
+                <dt>Back end and data</dt>
+                <dd>Node.js, Spring Boot, REST APIs, SQL, NoSQL</dd>
+                <dt>Testing and accessibility</dt>
+                <dd>Selenium, JUnit, NVDA, JAWS, VoiceOver, TalkBack, Narrator</dd>
+                <dt>Automation and AI</dt>
+                <dd>LLM APIs, LangChain, n8n, Zapier, Python scripting</dd>
+            </dl>
         </section>
 
-        <!-- Comprehensive Tech Stack -->
-        <section id="tech-stack" class="py-24 border-t border-slate-800 bg-slate-900/50" aria-labelledby="tech-heading">
-            <div class="max-w-7xl mx-auto px-6">
-                <h2 id="tech-heading" class="text-3xl font-bold mb-12 text-white text-center">Comprehensive Technology Stack</h2>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                    <div class="p-6 bg-slate-800 rounded-lg text-center border border-slate-700">
-                        <h3 class="font-bold text-white mb-2">Languages</h3>
-                        <p class="text-sm text-slate-400">Java, Python, C++, Kotlin, JavaScript, TypeScript, HTML/CSS</p>
-                    </div>
-                    <div class="p-6 bg-slate-800 rounded-lg text-center border border-slate-700">
-                        <h3 class="font-bold text-white mb-2">Mobile & Frontend</h3>
-                        <p class="text-sm text-slate-400">Android SDK, Jetpack Compose, React, Tailwind CSS</p>
-                    </div>
-                    <div class="p-6 bg-slate-800 rounded-lg text-center border border-slate-700">
-                        <h3 class="font-bold text-white mb-2">Backend & DB</h3>
-                        <p class="text-sm text-slate-400">Node.js, Spring Boot, REST APIs, SQL, NoSQL</p>
-                    </div>
-                    <div class="p-6 bg-slate-800 rounded-lg text-center border border-slate-700">
-                        <h3 class="font-bold text-white mb-2">Testing & a11y</h3>
-                        <p class="text-sm text-slate-400">Selenium, JUnit, NVDA, JAWS, TalkBack, Narrator</p>
-                    </div>
-                    <div class="p-6 bg-slate-800 rounded-lg text-center border border-slate-700">
-                        <h3 class="font-bold text-white mb-2">AI & Automation</h3>
-                        <p class="text-sm text-slate-400">LLM API Integration, LangChain, n8n, Zapier, Python Automation Scripts</p>
-                    </div>
-                </div>
-            </div>
+        <section id="projects" aria-labelledby="projects-h">
+            <h2 id="projects-h">Independent projects</h2>
+            <p>Self-directed work focused on non-visual accessibility. All three are in development, and public repositories and demos will be linked here when they are released.</p>
+
+            <article class="project" aria-labelledby="p1">
+                <h3 id="p1">Accessible chess app for Android</h3>
+                <p class="status">Status: in development · Kotlin, Jetpack Compose</p>
+                <p>A chess app designed for blind and low-vision players, with TalkBack support, spoken move announcements and non-visual board navigation.</p>
+            </article>
+
+            <article class="project" aria-labelledby="p2">
+                <h3 id="p2">Embeddable authentication service</h3>
+                <p class="status">Status: in development · Node.js or Java, REST</p>
+                <p>A lightweight authentication module for small teams, with secure token handling and sensible defaults, so login can be added without running a full identity platform.</p>
+            </article>
+
+            <article class="project" aria-labelledby="p3">
+                <h3 id="p3">Screen-reader-accessible video tool</h3>
+                <p class="status">Status: in development · Python</p>
+                <p>An AI-assisted tool that lets blind creators produce typography-based videos and do precise splitting and editing through a fully non-visual workflow.</p>
+            </article>
         </section>
 
-        <!-- Independent Projects -->
-        <section id="projects" class="py-24 border-t border-slate-800" aria-labelledby="projects-heading">
-            <div class="max-w-7xl mx-auto px-6">
-                <div class="flex flex-wrap items-end justify-between gap-4 mb-4">
-                    <h2 id="projects-heading" class="text-3xl font-bold text-white">Independent Projects — Building in Public</h2>
-                </div>
-                <p class="text-slate-400 mb-12 max-w-3xl text-lg">Alongside client work, I build original software focused on an area most of the industry overlooks: genuine accessibility for visually impaired users. These are self-directed, currently active builds — public repos and live demos are on the way.</p>
-
-                <div class="space-y-8">
-                    <!-- Accessible Chess -->
-                    <div class="p-8 bg-slate-800/40 rounded-xl border-l-4 border-blue-500 border-y border-r border-y-slate-700 border-r-slate-700">
-                        <div class="flex flex-wrap items-center gap-3 mb-3">
-                            <h3 class="text-2xl font-bold text-white">Fully Accessible Chess App for Android</h3>
-                            <span class="px-3 py-1 bg-blue-500/10 text-blue-400 text-xs font-bold rounded-full border border-blue-500/30">In Active Development</span>
-                        </div>
-                        <p class="text-slate-300 mb-4 max-w-4xl">Designing and building a chess app engineered from the ground up for visually impaired players — full TalkBack/screen-reader support, audio move announcements, and non-visual board navigation. To my knowledge, no mainstream Android chess app currently offers this level of end-to-end screen-reader playability.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-slate-700 text-xs text-slate-200 rounded-full">Kotlin</span>
-                            <span class="px-3 py-1 bg-slate-700 text-xs text-slate-200 rounded-full">Jetpack Compose</span>
-                            <span class="px-3 py-1 bg-slate-700 text-xs text-slate-200 rounded-full">TalkBack / Screen Reader Support</span>
-                            <span class="px-3 py-1 bg-slate-700 text-xs text-slate-200 rounded-full">Accessibility (a11y)</span>
-                        </div>
-                    </div>
-
-                    <!-- Plug and Play Auth -->
-                    <div class="p-8 bg-slate-800/40 rounded-xl border-l-4 border-blue-500 border-y border-r border-y-slate-700 border-r-slate-700">
-                        <div class="flex flex-wrap items-center gap-3 mb-3">
-                            <h3 class="text-2xl font-bold text-white">Plug-and-Play Authentication Service</h3>
-                            <span class="px-3 py-1 bg-blue-500/10 text-blue-400 text-xs font-bold rounded-full border border-blue-500/30">In Active Development</span>
-                        </div>
-                        <p class="text-slate-300 mb-4 max-w-4xl">Building a lightweight, embeddable authentication module for individual developers and small teams who need production-grade auth without standing up heavy identity infrastructure. Goal: a drop-in SDK/API with secure token lifecycle management and sane defaults, so teams can add MFA-ready login in minutes.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-slate-700 text-xs text-slate-200 rounded-full">Node.js / Java</span>
-                            <span class="px-3 py-1 bg-slate-700 text-xs text-slate-200 rounded-full">REST APIs</span>
-                            <span class="px-3 py-1 bg-slate-700 text-xs text-slate-200 rounded-full">Security Architecture</span>
-                            <span class="px-3 py-1 bg-slate-700 text-xs text-slate-200 rounded-full">Developer Tooling</span>
-                        </div>
-                    </div>
-
-                    <!-- Accessible Video Tool -->
-                    <div class="p-8 bg-slate-800/40 rounded-xl border-l-4 border-blue-500 border-y border-r border-y-slate-700 border-r-slate-700">
-                        <div class="flex flex-wrap items-center gap-3 mb-3">
-                            <h3 class="text-2xl font-bold text-white">Accessible AI Video Creation & Editing Tool</h3>
-                            <span class="px-3 py-1 bg-blue-500/10 text-blue-400 text-xs font-bold rounded-full border border-blue-500/30">In Active Development</span>
-                        </div>
-                        <p class="text-slate-300 mb-4 max-w-4xl">Developing an AI-assisted video tool built specifically for screen-reader accessibility — enabling visually impaired creators to generate typography-driven videos and perform precise video splitting and editing through fully non-visual, accessible workflows. Aiming to be one of the first video creation tools designed accessibility-first rather than retrofitted.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-slate-700 text-xs text-slate-200 rounded-full">Python</span>
-                            <span class="px-3 py-1 bg-slate-700 text-xs text-slate-200 rounded-full">AI / Video Generation</span>
-                            <span class="px-3 py-1 bg-slate-700 text-xs text-slate-200 rounded-full">Media Processing</span>
-                            <span class="px-3 py-1 bg-slate-700 text-xs text-slate-200 rounded-full">Accessibility (a11y)</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mt-10 p-6 bg-slate-800/20 border border-slate-800 rounded-xl text-slate-400 text-sm md:text-base">
-                    Interested in early access, collaborating, or discussing any of these builds? <a href="#contact" class="text-blue-400 font-semibold hover:text-blue-300 transition-colors">Get in touch</a> — public repos and live demos will be linked here as each project reaches release.
-                </div>
-            </div>
+        <section id="confidentiality" aria-labelledby="conf-h">
+            <h2 id="conf-h">Confidentiality and terms</h2>
+            <p>Client code, data and findings are kept confidential, and I am happy to sign an NDA. Work is agreed in writing with milestones before it starts. See the policies linked in the footer for privacy, terms, refunds and delivery.</p>
         </section>
 
-        <!-- Uncompromising Privacy & Legal -->
-        <section id="compliance" class="py-24 border-t border-slate-800 bg-slate-900" aria-labelledby="compliance-heading">
-            <div class="max-w-7xl mx-auto px-6">
-                <div class="bg-black p-10 rounded-2xl border border-slate-700">
-                    <h2 id="compliance-heading" class="text-3xl font-bold mb-6 text-white flex items-center gap-3">
-                        <svg aria-hidden="true" class="w-8 h-8 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
-                        Security & Legal Compliance
-                    </h2>
-                    <div class="text-slate-400 space-y-6 text-sm md:text-base leading-relaxed">
-                        <p><strong>Confidentiality:</strong> All software architecture, proprietary business logic, and vulnerability assessments handled during my consultancy remain strictly confidential. I operate under rigorous Non-Disclosure Agreements (NDAs) to protect enterprise IP.</p>
-                        <p><strong>No Third-Party Data Sharing:</strong> As an independent consultant, I enforce a zero-trust data policy. Your project files, customer data, and security testing logs are never sold, shared, or distributed to external agencies or third-party platforms.</p>
-                        <p><strong>Merchant Services & Refunds:</strong> International contracts are billed via verified payment gateways based on clear, milestone-driven deliverables. Standard refund, cancellation, and dispute resolution policies are established per contract in accordance with legal gateway requirements.</p>
-                    </div>
-                </div>
-            </div>
+        <section id="contact" aria-labelledby="contact-h">
+            <h2 id="contact-h">Contact</h2>
+            <p>I am available for remote freelance work. Email is the best way to reach me.</p>
+            <dl class="facts">
+                <dt>Email</dt>
+                <dd><a href="mailto:karanpanhalkar123@gmail.com">karanpanhalkar123@gmail.com</a></dd>
+                <dt>Telegram</dt>
+                <dd><a href="https://t.me/Karan_Panhalkar">@Karan_Panhalkar</a></dd>
+                <dt>GitHub</dt>
+                <dd><a href="https://github.com/karan12312">github.com/karan12312</a></dd>
+                <dt>Location</dt>
+                <dd>Pune, Maharashtra, India (remote and international clients)</dd>
+            </dl>
         </section>
     </main>
 
-    <!-- Professional Footer / Contact (Gateway Compliant) -->
-    <footer id="contact" class="bg-black py-20 border-t border-slate-800" aria-labelledby="footer-heading">
-        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16">
-            <div>
-                <h2 id="footer-heading" class="text-3xl font-bold text-white mb-6">Let's Engineer Your Next Project.</h2>
-                <p class="text-slate-400 mb-10 max-w-md text-lg">Available for freelance enterprise development, Android app creation, and dedicated accessibility audits. The fastest way to reach me is by email or Telegram.</p>
-                
-                <div class="space-y-5 text-slate-300">
-                    <div class="flex items-start gap-4">
-                        <div class="p-3 bg-slate-800 rounded-lg"><svg aria-hidden="true" class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></div>
-                        <div>
-                            <p class="font-bold text-slate-400 text-sm uppercase tracking-wider mb-1">Email</p>
-                            <a href="mailto:karanpanhalkar123@gmail.com" class="text-lg hover:text-blue-400 font-medium transition-colors">karanpanhalkar123@gmail.com</a>
-                        </div>
-                    </div>
-
-                <div class="flex flex-wrap gap-4 mt-8">
-                    <a href="https://t.me/Karan_Panhalkar" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 bg-[#26A5E4] hover:bg-[#1e8fc7] text-white font-bold py-3 px-6 rounded-lg transition-colors" aria-label="Contact via Telegram">
-                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M21.05 3.79L2.62 11.03c-1.26.5-1.25 1.19-.23 1.5l4.72 1.47 1.83 5.6c.22.6.11.84.75.84.5 0 .72-.23 1-.5l2.4-2.32 4.79 3.53c.88.49 1.51.24 1.73-.82l3.13-14.72c.32-1.3-.5-1.88-1.69-1.42zM8.8 13.86l-1.3-1-.36-4.16 8.94-6.4c.34-.24.66-.11.4.15L8.8 13.86z"/></svg>
-                        Telegram
-                    </a>
-                </div>
-            </div>
-            
-            <div class="md:text-right flex flex-col justify-between">
-                <div>
-                    <h3 class="font-bold text-white mb-4 text-xl">Consulting Entity Details</h3>
-                    <address class="not-italic text-slate-400 leading-relaxed mb-6">
-                        <strong>Karan Anil Panhalkar</strong><br>
-                        Pune, Maharashtra, India<br>
-                        Available for Remote & International Clients
-                    </address>
-                </div>
-                <div class="text-sm text-slate-400 space-y-2 pt-8 border-t border-slate-800">
-                    <p>B.A. Graduate, Savitribai Phule Pune University (SPPU)</p>
-                    <p>Professional Fluency: English, Hindi, Marathi</p>
-                    <div class="mt-4 flex flex-wrap gap-4 text-slate-400 justify-end md:justify-start">
-                        <a href="privacy.html" class="hover:text-blue-400 transition-colors">Privacy Policy</a>
-                        <a href="terms.html" class="hover:text-blue-400 transition-colors">Terms & Conditions</a>
-                        <a href="refund.html" class="hover:text-blue-400 transition-colors">Refund Policy</a>
-                        <a href="delivery.html" class="hover:text-blue-400 transition-colors">Delivery Policy</a>
-                    </div>
-                    <p class="mt-4 text-slate-400">&copy; 2026 Karan Anil Panhalkar. All rights reserved.</p>
-                </div>
-            </div>
+    <footer class="site">
+        <div class="wrap">
+            <nav aria-label="Policies">
+                <ul>
+                    <li><a href="privacy.html">Privacy policy</a></li>
+                    <li><a href="terms.html">Terms and conditions</a></li>
+                    <li><a href="refund.html">Refund policy</a></li>
+                    <li><a href="delivery.html">Delivery policy</a></li>
+                </ul>
+            </nav>
+            <p>&copy; 2026 Karan Anil Panhalkar</p>
         </div>
     </footer>
-
-    <script>
-        (function () {
-            var btn = document.getElementById('nav-toggle');
-            var menu = document.getElementById('nav-menu');
-            btn.addEventListener('click', function () {
-                var open = menu.classList.toggle('hidden') === false;
-                btn.setAttribute('aria-expanded', String(open));
-            });
-            menu.addEventListener('click', function (e) {
-                if (e.target.tagName === 'A' && window.innerWidth < 768) {
-                    menu.classList.add('hidden');
-                    btn.setAttribute('aria-expanded', 'false');
-                }
-            });
-        })();
-    </script>
 </body>
 </html>
