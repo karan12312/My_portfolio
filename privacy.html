@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy | Karan Anil Panhalkar</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
     <style>
+        .skip-link { position: absolute; left: -9999px; top: 0; z-index: 100; background: #2563EB; color: #fff; padding: .75rem 1.25rem; font-weight: 700; }
+        .skip-link:focus { left: 0; }
         *:focus-visible { outline: 3px solid #3B82F6; outline-offset: 4px; }
         body { font-family: 'Inter', system-ui, sans-serif; background-color: #0F172A; color: #F8FAFC; }
     </style>
 </head>
 <body class="antialiased leading-relaxed">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <nav aria-label="Main Navigation" class="sticky top-0 z-50 bg-slate-900/90 border-b border-slate-800 backdrop-blur-md">
         <div class="max-w-7xl mx-auto px-6 py-5 flex flex-wrap justify-between items-center">
@@ -23,7 +26,7 @@
         </div>
     </nav>
 
-    <main class="max-w-4xl mx-auto px-6 py-24 min-h-screen">
+    <main id="main-content" class="max-w-4xl mx-auto px-6 py-24 min-h-screen">
         <h1 class="text-4xl font-bold text-white mb-8">Privacy Policy</h1>
         <div class="bg-slate-800/40 p-8 rounded-2xl border border-slate-700 text-slate-300 space-y-6">
             <p><strong>Last Updated: July 2026</strong></p>
@@ -43,7 +46,7 @@
         </div>
     </main>
 
-    <footer class="bg-black py-10 border-t border-slate-800 text-center text-sm text-slate-500">
+    <footer class="bg-black py-10 border-t border-slate-800 text-center text-sm text-slate-400">
         <div class="flex flex-wrap justify-center gap-4 mb-4">
             <a href="privacy.html" class="hover:text-blue-400 transition-colors">Privacy Policy</a>
             <a href="terms.html" class="hover:text-blue-400 transition-colors">Terms & Conditions</a>
